@@ -54,23 +54,6 @@ const normalizeData = (posts: Post[]): NormalizedPosts => {
     let byId: ById = {}
     let allIds: string[] = []
 
-    let testPost: Post = {
-        id: '4444',
-        title: 'asuisaiuasiusa',
-        body: 'sddssdds'
-    }
-
-    let testById: ById = {
-        das: testPost,
-        dssdsd: testPost,
-        tes: testPost
-    }
-
-    let testNorm: NormalizedPosts = {
-        byId: testById,
-        allIds: ['sss']
-    }
-
     posts.forEach(post => {
         byId[post.id] = post
         allIds.push(post.id)
